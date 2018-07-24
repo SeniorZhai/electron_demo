@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-
+    <div>
+      <h1>
+        <div id='result'></div>
+        <button id='button'>click me</button>
+      </h1>
+    </div>
     <script>
-      // You can also require other files to run in this process
       require('./renderer.js')
     </script>
   </body>
